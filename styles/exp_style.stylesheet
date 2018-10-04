@@ -1,0 +1,14 @@
+ QAbstractItemView::indicator:unchecked { image: url(styles/images/ckbxEmpty.png) }
+ QAbstractItemView::indicator:checked { image: url(styles/images/ckbxMark.png)}
+
+
+ QAbstractItemView::item:hover {background-color: lightgreen;}
+ QAbstractItemView::item:selected:active  {background-color: rgb(50,200,50);}
+ QAbstractItemView::item:selected:!active  {background-color: lightgreen;}
+
+ QPushButton:hover{background-color: lightgreen}
+	
+ QTabBar::tab:hover{background-color: lightgreen}
+ 
+ QTabBar::close-button:hover{background-color: lightgreen; image: url(styles/images/close_hover.png)}
+ QTabBar::close-button{image: url(styles/images/close.png)}
