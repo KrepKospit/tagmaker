@@ -3,9 +3,6 @@
 from PyQt5 import QtCore, Qt, QtGui, QtSql, QtWidgets as QW
 import os.path, sys
 
-if __name__ == '__main__':
-    app = QW.QApplication(sys.argv)
-
 
 #класс, отображающий добавленные в базу папки
 
@@ -453,7 +450,10 @@ class Item_List(QW.QListView):
     def closeEvent(self, QCloseEvent):
         self.item_data.close()
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
+    app = QW.QApplication(sys.argv)
+
 
     window = Item_List()
     window.setMinimumSize(300,200)
